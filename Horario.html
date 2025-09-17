@@ -1,62 +1,42 @@
-<!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Horario de Clases</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-    }
     table {
       border-collapse: collapse;
-      width: 95%;
-      background: white;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      text-align: center;
     }
     th, td {
-      border: 1px solid #ccc;
-      text-align: center;
-      padding: 12px;
-      transition: transform 0.2s ease, background 0.2s ease;
-      font-weight: bold;
-    }
-    th {
-      background: #4834d4;
-      color: white;
-      font-size: 1.1em;
+      border: 3px solid #333;
+      padding: 10px;
+      transition: transform 0.2s ease;
     }
     td:hover {
       transform: scale(1.1);
-      background: #f0f0ff;
       z-index: 1;
       position: relative;
     }
-    em {
-      font-weight: normal;
-      font-style: italic;
-      display: block;
-      margin-top: 4px;
+    th {
+      background-color: #444;
+      color: white;
+      font-weight: bold;
     }
 
-    /* 🎨 Bordes por asignatura (más grandes e intensos) */
-    .bases   { border: 5px solid #0a3d91; }   
-    .sistemas { border: 5px solid #0e6655; }  
-    .programacion { border: 5px solid #b03a2e; } 
-    .digitalizacion { border: 5px solid #6c3483; } 
-    .sostenibilidad { border: 5px solid #1e8449; } 
-    .itinerario { border: 5px solid #d68910; } 
-    .lenguajes { border: 5px solid #af601a; } 
-    .entornos { border: 5px solid #154360; }   
-    .recreo { border: 5px solid #424949; font-weight: bold; background: #d5d8dc; }
+    /* Colores por asignatura */
+    .bd { background-color: #ff9999; font-weight: bold; }
+    .si { background-color: #99ccff; font-weight: bold; }
+    .prog { background-color: #99ff99; font-weight: bold; }
+    .dig { background-color: #ffcc99; font-weight: bold; }
+    .sost { background-color: #cc99ff; font-weight: bold; }
+    .itp { background-color: #ffff99; font-weight: bold; }
+    .lm { background-color: #ffb3e6; font-weight: bold; }
+    .ent { background-color: #b3ffff; font-weight: bold; }
+    .recreo { background-color: #cccccc; font-weight: bold; }
   </style>
 </head>
 <body>
   <table>
-    <caption><strong>Horario de Clases</strong></caption>
+    <caption><h2>Horario de Clases</h2></caption>
     <tr>
       <th>HORAS</th>
       <th>Lunes</th>
@@ -67,27 +47,27 @@
     </tr>
     <tr>
       <td>15:30-16:30</td>
-      <td class="bases">Bases de datos<br><em>López López, José Antonio</em><br>2-27</td>
-      <td class="sistemas">Sistemas informáticos<br><em>López Dávila, Rocío</em><br>2-27</td>
-      <td class="programacion">Programación<br><em>Muñoz-Cruzado Marenco, Antonio Jesús</em><br>2-27</td>
-      <td class="bases">Bases de datos<br><em>López López, José Antonio</em><br>2-27</td>
-      <td class="programacion">Programación<br><em>Muñoz-Cruzado Marenco, Antonio Jesús</em><br>2-27</td>
+      <td class="bd">Bases de datos<br><i>López López, José Antonio</i><br>2-27</td>
+      <td class="si">Sistemas informáticos<br><i>López Dávila, Rocío</i><br>2-27</td>
+      <td class="prog">Programación<br><i>Muñoz-Cruzado Marenco, Antonio Jesús</i><br>2-27</td>
+      <td class="bd">Bases de datos<br><i>López López, José Antonio</i><br>2-27</td>
+      <td class="prog">Programación<br><i>Muñoz-Cruzado Marenco, Antonio Jesús</i><br>2-27</td>
     </tr>
     <tr>
       <td>16:30-17:30</td>
-      <td class="bases">Bases de datos<br><em>López López, José Antonio</em><br>2-27</td>
-      <td class="sistemas">Sistemas informáticos<br><em>López Dávila, Rocío</em><br>2-27</td>
-      <td class="programacion">Programación<br><em>Muñoz-Cruzado Marenco, Antonio Jesús</em><br>2-27</td>
-      <td class="bases">Bases de datos<br><em>López López, José Antonio</em><br>2-27</td>
-      <td class="programacion">Programación<br><em>Muñoz-Cruzado Marenco, Antonio Jesús</em><br>2-27</td>
+      <td class="bd">Bases de datos<br><i>López López, José Antonio</i><br>2-27</td>
+      <td class="si">Sistemas informáticos<br><i>López Dávila, Rocío</i><br>2-27</td>
+      <td class="prog">Programación<br><i>Muñoz-Cruzado Marenco, Antonio Jesús</i><br>2-27</td>
+      <td class="bd">Bases de datos<br><i>López López, José Antonio</i><br>2-27</td>
+      <td class="prog">Programación<br><i>Muñoz-Cruzado Marenco, Antonio Jesús</i><br>2-27</td>
     </tr>
     <tr>
       <td>17:30-18:30</td>
-      <td class="digitalizacion">Digitalización Aplicada<br><em>López Rubio, José Miguel</em><br>2-27</td>
-      <td class="bases">Bases de datos<br><em>López López, José Antonio</em><br>2-27</td>
-      <td class="sostenibilidad">Sostenibilidad aplicada<br><em>Daga Martín, Miguel</em><br>2-27</td>
-      <td class="itinerario">Itinerario personal<br><em>Veiga Campo, Itziar</em><br>2-27</td>
-      <td class="programacion">Programación<br><em>Muñoz-Cruzado Marenco, Antonio Jesús</em><br>2-27</td>
+      <td class="dig">Digitalización Aplicada<br><i>López Rubio, José Miguel</i><br>2-27</td>
+      <td class="bd">Bases de datos<br><i>López López, José Antonio</i><br>2-27</td>
+      <td class="sost">Sostenibilidad aplicada<br><i>Daga Martín, Miguel</i><br>2-27</td>
+      <td class="itp">Itinerario personal para la em<br><i>Veiga Campo, Itziar</i><br>2-27</td>
+      <td class="prog">Programación<br><i>Muñoz-Cruzado Marenco, Antonio Jesús</i><br>2-27</td>
     </tr>
     <tr>
       <td>18:30-19:00</td>
@@ -95,27 +75,27 @@
     </tr>
     <tr>
       <td>19:00-20:00</td>
-      <td class="lenguajes">Lenguajes de marcas<br><em>López Rubio, José Miguel</em><br>2-27</td>
-      <td class="bases">Bases de datos<br><em>López López, José Antonio</em><br>2-27</td>
-      <td class="entornos">Entornos de desarrollo<br><em>Daga Martín, Miguel</em><br>2-27</td>
-      <td class="programacion">Programación<br><em>Muñoz-Cruzado Marenco, Antonio Jesús</em><br>2-27</td>
-      <td class="sistemas">Sistemas informáticos<br><em>López Dávila, Rocío</em><br>2-27</td>
+      <td class="lm">Lenguajes de marcas y sistemas<br><i>López Rubio, José Miguel</i><br>2-27</td>
+      <td class="bd">Bases de datos<br><i>López López, José Antonio</i><br>2-27</td>
+      <td class="si">Sistemas informáticos<br><i>López Dávila, Rocío</i><br>2-27</td>
+      <td class="prog">Programación<br><i>Muñoz-Cruzado Marenco, Antonio Jesús</i><br>2-27</td>
+      <td class="ent">Entornos de desarrollo<br><i>Daga Martín, Miguel</i><br>2-27</td>
     </tr>
     <tr>
       <td>20:00-21:00</td>
-      <td class="itinerario">Itinerario personal<br><em>Veiga Campo, Itziar</em><br>2-27</td>
-      <td class="lenguajes">Lenguajes de marcas<br><em>López Rubio, José Miguel</em><br>2-27</td>
-      <td class="entornos">Entornos de desarrollo<br><em>Daga Martín, Miguel</em><br>2-27</td>
-      <td class="programacion">Programación<br><em>Muñoz-Cruzado Marenco, Antonio Jesús</em><br>2-27</td>
-      <td class="sistemas">Sistemas informáticos<br><em>López Dávila, Rocío</em><br>2-27</td>
+      <td class="itp">Itinerario personal para la em<br><i>Veiga Campo, Itziar</i><br>2-27</td>
+      <td class="lm">Lenguajes de marcas y sistemas<br><i>López Rubio, José Miguel</i><br>2-27</td>
+      <td class="si">Sistemas informáticos<br><i>López Dávila, Rocío</i><br>2-27</td>
+      <td class="prog">Programación<br><i>Muñoz-Cruzado Marenco, Antonio Jesús</i><br>2-27</td>
+      <td class="ent">Entornos de desarrollo<br><i>Daga Martín, Miguel</i><br>2-27</td>
     </tr>
     <tr>
       <td>21:00-22:00</td>
-      <td class="itinerario">Itinerario personal<br><em>Veiga Campo, Itziar</em><br>2-27</td>
-      <td class="lenguajes">Lenguajes de marcas<br><em>López Rubio, José Miguel</em><br>2-27</td>
-      <td class="entornos">Entornos de desarrollo<br><em>Daga Martín, Miguel</em><br>2-27</td>
-      <td class="programacion">Programación<br><em>Muñoz-Cruzado Marenco, Antonio Jesús</em><br>2-27</td>
-      <td class="sistemas">Sistemas informáticos<br><em>López Dávila, Rocío</em><br>2-27</td>
+      <td class="itp">Itinerario personal para la em<br><i>Veiga Campo, Itziar</i><br>2-27</td>
+      <td class="lm">Lenguajes de marcas y sistemas<br><i>López Rubio, José Miguel</i><br>2-27</td>
+      <td class="si">Sistemas informáticos<br><i>López Dávila, Rocío</i><br>2-27</td>
+      <td class="prog">Programación<br><i>Muñoz-Cruzado Marenco, Antonio Jesús</i><br>2-27</td>
+      <td class="ent">Entornos de desarrollo<br><i>Daga Martín, Miguel</i><br>2-27</td>
     </tr>
   </table>
 </body>
